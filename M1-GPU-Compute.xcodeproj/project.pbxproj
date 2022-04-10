@@ -45,7 +45,9 @@
 		C55A9AFF28028663003FCB21 = {
 			isa = PBXGroup;
 			children = (
-				C55A9B0A28028663003FCB21 /* M1-GPU-Compute */,
+				C55A9B0B28028663003FCB21 /* main.swift */,
+				C55A9B12280287A0003FCB21 /* compute.metal */,
+				C55A9B14280287AE003FCB21 /* populate.metal */,
 				C55A9B0928028663003FCB21 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,16 +58,6 @@
 				C55A9B0828028663003FCB21 /* M1-GPU-Compute */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C55A9B0A28028663003FCB21 /* M1-GPU-Compute */ = {
-			isa = PBXGroup;
-			children = (
-				C55A9B0B28028663003FCB21 /* main.swift */,
-				C55A9B12280287A0003FCB21 /* compute.metal */,
-				C55A9B14280287AE003FCB21 /* populate.metal */,
-			);
-			path = "M1-GPU-Compute";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
