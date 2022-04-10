@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C55A9B0C28028663003FCB21 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55A9B0B28028663003FCB21 /* main.swift */; };
+		C55A9B13280287A0003FCB21 /* compute.metal in Sources */ = {isa = PBXBuildFile; fileRef = C55A9B12280287A0003FCB21 /* compute.metal */; };
+		C55A9B15280287AE003FCB21 /* populate.metal in Sources */ = {isa = PBXBuildFile; fileRef = C55A9B14280287AE003FCB21 /* populate.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		C55A9B0828028663003FCB21 /* M1-GPU-Compute */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "M1-GPU-Compute"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55A9B0B28028663003FCB21 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C55A9B12280287A0003FCB21 /* compute.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = compute.metal; sourceTree = "<group>"; };
+		C55A9B14280287AE003FCB21 /* populate.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = populate.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				C55A9B0B28028663003FCB21 /* main.swift */,
+				C55A9B12280287A0003FCB21 /* compute.metal */,
+				C55A9B14280287AE003FCB21 /* populate.metal */,
 			);
 			path = "M1-GPU-Compute";
 			sourceTree = "<group>";
@@ -121,6 +127,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C55A9B0C28028663003FCB21 /* main.swift in Sources */,
+				C55A9B15280287AE003FCB21 /* populate.metal in Sources */,
+				C55A9B13280287A0003FCB21 /* compute.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +138,7 @@
 		C55A9B0D28028663003FCB21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -182,6 +191,8 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -190,6 +201,7 @@
 		C55A9B0E28028663003FCB21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -235,6 +247,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
