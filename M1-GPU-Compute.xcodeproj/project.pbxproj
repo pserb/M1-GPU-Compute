@@ -10,6 +10,8 @@
 		C55A9B0C28028663003FCB21 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55A9B0B28028663003FCB21 /* main.swift */; };
 		C55A9B13280287A0003FCB21 /* compute.metal in Sources */ = {isa = PBXBuildFile; fileRef = C55A9B12280287A0003FCB21 /* compute.metal */; };
 		C55A9B15280287AE003FCB21 /* populate.metal in Sources */ = {isa = PBXBuildFile; fileRef = C55A9B14280287AE003FCB21 /* populate.metal */; };
+		C5D58AF128069A1E00B73493 /* LinearListAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D58AF028069A1E00B73493 /* LinearListAdd.swift */; };
+		C5D58AF728069CA400B73493 /* MatrixAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D58AF628069CA400B73493 /* MatrixAdd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,8 @@
 		C55A9B0B28028663003FCB21 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C55A9B12280287A0003FCB21 /* compute.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = compute.metal; sourceTree = "<group>"; };
 		C55A9B14280287AE003FCB21 /* populate.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = populate.metal; sourceTree = "<group>"; };
+		C5D58AF028069A1E00B73493 /* LinearListAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearListAdd.swift; sourceTree = "<group>"; };
+		C5D58AF628069CA400B73493 /* MatrixAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAdd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +49,9 @@
 		C55A9AFF28028663003FCB21 = {
 			isa = PBXGroup;
 			children = (
+				C5D58AF528069C9700B73493 /* MatrixAdd */,
+				C5D58AF228069B3A00B73493 /* LinearListAdd */,
 				C55A9B0B28028663003FCB21 /* main.swift */,
-				C55A9B12280287A0003FCB21 /* compute.metal */,
-				C55A9B14280287AE003FCB21 /* populate.metal */,
 				C55A9B0928028663003FCB21 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +62,24 @@
 				C55A9B0828028663003FCB21 /* M1-GPU-Compute */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C5D58AF228069B3A00B73493 /* LinearListAdd */ = {
+			isa = PBXGroup;
+			children = (
+				C55A9B12280287A0003FCB21 /* compute.metal */,
+				C55A9B14280287AE003FCB21 /* populate.metal */,
+				C5D58AF028069A1E00B73493 /* LinearListAdd.swift */,
+			);
+			path = LinearListAdd;
+			sourceTree = "<group>";
+		};
+		C5D58AF528069C9700B73493 /* MatrixAdd */ = {
+			isa = PBXGroup;
+			children = (
+				C5D58AF628069CA400B73493 /* MatrixAdd.swift */,
+			);
+			path = MatrixAdd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,8 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D58AF728069CA400B73493 /* MatrixAdd.swift in Sources */,
 				C55A9B0C28028663003FCB21 /* main.swift in Sources */,
 				C55A9B15280287AE003FCB21 /* populate.metal in Sources */,
+				C5D58AF128069A1E00B73493 /* LinearListAdd.swift in Sources */,
 				C55A9B13280287A0003FCB21 /* compute.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
